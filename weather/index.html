@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false">
+        <button><img src="images/search.png"></button>
+      </div>
+      <div class="Weather">
+        <img src="images/rain.png" alt="Rain Icon">
+        <h1 class="temp">22°c</h1>
+        <h2 class="city">Lagos State</h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="Humidity Icon">
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="Humidity Icon">
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script>
+      const apiKey ="7813dcf5208d8ce6261793fb3ef0319c";
+      const apiUrl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=lagos";
+
+      async function checkWeather(){
+        const response = await fetch(apiUrl + '&appid=${apiKey}');
+        var data = await response.json();
+
+        console.log(data);
+      }
+
+      checkWeather();
+    </script>
+  </body>
+</html>
