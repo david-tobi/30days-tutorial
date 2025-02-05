@@ -27,6 +27,14 @@ body {
   flex-direction: column;
   overflow: hidden;
   padding: 20px;
-  
-  
+}
+.toast{
+  width:400px;
+  height: 80px;
+  background:white;
+  font: weight 500px;
+  margin: 15px 0;
+  box-shadow:0 0 20px rgba(0,0,0,0.3);
+  display: flex;
+  align-items:center;
 }
