@@ -1,0 +1,16 @@
+body{
+  background: #edeaff;
+  
+}
+.stopwatch{
+  width: 90%;
+  max-width: 600px;
+  background-image: linear-gradient(rgba(0,0,0,0).8,rgba(0,0,0,0.8)), url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+  color: black;
+  margin: 200px auto 0;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.8);
+}
